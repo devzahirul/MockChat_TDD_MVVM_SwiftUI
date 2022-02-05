@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA6A7B8027AE4E9D00BF83A5 /* FetchMessagessUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B7F27AE4E9D00BF83A5 /* FetchMessagessUsecase.swift */; };
+		FA6A7B8227AE968400BF83A5 /* NamePlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B8127AE968400BF83A5 /* NamePlaceHolderView.swift */; };
+		FA6A7B8427AE9A2D00BF83A5 /* ChatContactListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B8327AE9A2D00BF83A5 /* ChatContactListItemView.swift */; };
+		FA6A7B8627AE9C6600BF83A5 /* FetchChatContactListUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B8527AE9C6600BF83A5 /* FetchChatContactListUsecaseTest.swift */; };
+		FA6A7B8A27AEA27900BF83A5 /* ChatContactListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B8927AEA27900BF83A5 /* ChatContactListViewModelTest.swift */; };
+		FA6A7B8E27AEB92700BF83A5 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B8D27AEB92700BF83A5 /* MessageStore.swift */; };
+		FA6A7B9227AEB99400BF83A5 /* MockMessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B9127AEB99400BF83A5 /* MockMessageStore.swift */; };
+		FA6A7B9427AEBB4100BF83A5 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B9327AEBB4100BF83A5 /* ContactStore.swift */; };
+		FA6A7B9627AEBB9E00BF83A5 /* MockContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A7B9527AEBB9E00BF83A5 /* MockContactStore.swift */; };
+		FAA1FD8027AD5C2D002D4E01 /* CurrentUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1FD7F27AD5C2D002D4E01 /* CurrentUserService.swift */; };
+		FAA1FD8227AD5CF7002D4E01 /* MockCurrentUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1FD8127AD5CF7002D4E01 /* MockCurrentUserService.swift */; };
+		FAA1FD8427AD6CBF002D4E01 /* LastMessageStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1FD8327AD6CBF002D4E01 /* LastMessageStoreService.swift */; };
+		FAA1FD8627AD6D1C002D4E01 /* MockLastMessageStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1FD8527AD6D1C002D4E01 /* MockLastMessageStoreService.swift */; };
+		FADAB00C27A97A3500CE36B2 /* MockableChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB00B27A97A3500CE36B2 /* MockableChatAppApp.swift */; };
+		FADAB00E27A97A3500CE36B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB00D27A97A3500CE36B2 /* ContentView.swift */; };
+		FADAB01027A97A3700CE36B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADAB00F27A97A3700CE36B2 /* Assets.xcassets */; };
+		FADAB01327A97A3700CE36B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADAB01227A97A3700CE36B2 /* Preview Assets.xcassets */; };
+		FADAB02927A97A3700CE36B2 /* MockableChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB02827A97A3700CE36B2 /* MockableChatAppUITests.swift */; };
+		FADAB03827A97A7A00CE36B2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB03727A97A7A00CE36B2 /* Models.swift */; };
+		FADAB03C27A97AEA00CE36B2 /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB03B27A97AEA00CE36B2 /* MessagingService.swift */; };
+		FADAB04127A97B6900CE36B2 /* ChatContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB04027A97B6900CE36B2 /* ChatContactListView.swift */; };
+		FADAB04427A97B9100CE36B2 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB04327A97B9100CE36B2 /* ChatView.swift */; };
+		FADAB04827A97C2800CE36B2 /* MockMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB04727A97C2800CE36B2 /* MockMessagingService.swift */; };
+		FADAB04B27A97C8A00CE36B2 /* ChatContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB04A27A97C8A00CE36B2 /* ChatContactViewModel.swift */; };
+		FADAB04D27A97D8200CE36B2 /* FetchChatContactListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB04C27A97D8200CE36B2 /* FetchChatContactListUsecase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADAB01A27A97A3700CE36B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADAB00027A97A3500CE36B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADAB00727A97A3500CE36B2;
+			remoteInfo = MockableChatApp;
+		};
+		FADAB02527A97A3700CE36B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADAB00027A97A3500CE36B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADAB00727A97A3500CE36B2;
+			remoteInfo = MockableChatApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA6A7B7F27AE4E9D00BF83A5 /* FetchMessagessUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMessagessUsecase.swift; sourceTree = "<group>"; };
+		FA6A7B8127AE968400BF83A5 /* NamePlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePlaceHolderView.swift; sourceTree = "<group>"; };
+		FA6A7B8327AE9A2D00BF83A5 /* ChatContactListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContactListItemView.swift; sourceTree = "<group>"; };
+		FA6A7B8527AE9C6600BF83A5 /* FetchChatContactListUsecaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChatContactListUsecaseTest.swift; sourceTree = "<group>"; };
+		FA6A7B8927AEA27900BF83A5 /* ChatContactListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContactListViewModelTest.swift; sourceTree = "<group>"; };
+		FA6A7B8D27AEB92700BF83A5 /* MessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
+		FA6A7B9127AEB99400BF83A5 /* MockMessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessageStore.swift; sourceTree = "<group>"; };
+		FA6A7B9327AEBB4100BF83A5 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
+		FA6A7B9527AEBB9E00BF83A5 /* MockContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContactStore.swift; sourceTree = "<group>"; };
+		FAA1FD7F27AD5C2D002D4E01 /* CurrentUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserService.swift; sourceTree = "<group>"; };
+		FAA1FD8127AD5CF7002D4E01 /* MockCurrentUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrentUserService.swift; sourceTree = "<group>"; };
+		FAA1FD8327AD6CBF002D4E01 /* LastMessageStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMessageStoreService.swift; sourceTree = "<group>"; };
+		FAA1FD8527AD6D1C002D4E01 /* MockLastMessageStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLastMessageStoreService.swift; sourceTree = "<group>"; };
+		FADAB00827A97A3500CE36B2 /* MockableChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockableChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADAB00B27A97A3500CE36B2 /* MockableChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockableChatAppApp.swift; sourceTree = "<group>"; };
+		FADAB00D27A97A3500CE36B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FADAB00F27A97A3700CE36B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADAB01227A97A3700CE36B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FADAB01427A97A3700CE36B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADAB01927A97A3700CE36B2 /* MockableChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockableChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADAB01F27A97A3700CE36B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADAB02427A97A3700CE36B2 /* MockableChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockableChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADAB02827A97A3700CE36B2 /* MockableChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockableChatAppUITests.swift; sourceTree = "<group>"; };
+		FADAB02A27A97A3700CE36B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADAB03727A97A7A00CE36B2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FADAB03B27A97AEA00CE36B2 /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
+		FADAB04027A97B6900CE36B2 /* ChatContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContactListView.swift; sourceTree = "<group>"; };
+		FADAB04327A97B9100CE36B2 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FADAB04727A97C2800CE36B2 /* MockMessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessagingService.swift; sourceTree = "<group>"; };
+		FADAB04A27A97C8A00CE36B2 /* ChatContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContactViewModel.swift; sourceTree = "<group>"; };
+		FADAB04C27A97D8200CE36B2 /* FetchChatContactListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChatContactListUsecase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADAB00527A97A3500CE36B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAB01627A97A3700CE36B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAB02127A97A3700CE36B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA6A7B8727AEA23E00BF83A5 /* TestUsecases */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8527AE9C6600BF83A5 /* FetchChatContactListUsecaseTest.swift */,
+			);
+			path = TestUsecases;
+			sourceTree = "<group>";
+		};
+		FA6A7B8827AEA24B00BF83A5 /* TestViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8927AEA27900BF83A5 /* ChatContactListViewModelTest.swift */,
+			);
+			path = TestViewModels;
+			sourceTree = "<group>";
+		};
+		FA6A7B8B27AEB76F00BF83A5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8127AE968400BF83A5 /* NamePlaceHolderView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FA6A7B8C27AEB8F000BF83A5 /* StoreProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8D27AEB92700BF83A5 /* MessageStore.swift */,
+				FA6A7B9327AEBB4100BF83A5 /* ContactStore.swift */,
+			);
+			path = StoreProtocols;
+			sourceTree = "<group>";
+		};
+		FA6A7B8F27AEB96900BF83A5 /* MockImp */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B9027AEB97D00BF83A5 /* MockStore */,
+				FADAB03A27A97AB900CE36B2 /* MockServices */,
+			);
+			path = MockImp;
+			sourceTree = "<group>";
+		};
+		FA6A7B9027AEB97D00BF83A5 /* MockStore */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B9127AEB99400BF83A5 /* MockMessageStore.swift */,
+				FA6A7B9527AEBB9E00BF83A5 /* MockContactStore.swift */,
+			);
+			path = MockStore;
+			sourceTree = "<group>";
+		};
+		FADAAFFF27A97A3500CE36B2 = {
+			isa = PBXGroup;
+			children = (
+				FADAB00A27A97A3500CE36B2 /* MockableChatApp */,
+				FADAB01C27A97A3700CE36B2 /* MockableChatAppTests */,
+				FADAB02727A97A3700CE36B2 /* MockableChatAppUITests */,
+				FADAB00927A97A3500CE36B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADAB00927A97A3500CE36B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB00827A97A3500CE36B2 /* MockableChatApp.app */,
+				FADAB01927A97A3700CE36B2 /* MockableChatAppTests.xctest */,
+				FADAB02427A97A3700CE36B2 /* MockableChatAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADAB00A27A97A3500CE36B2 /* MockableChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB03E27A97B1A00CE36B2 /* UI */,
+				FADAB03D27A97B0E00CE36B2 /* Domain */,
+				FADAB03627A97A6000CE36B2 /* Data */,
+				FADAB00B27A97A3500CE36B2 /* MockableChatAppApp.swift */,
+				FADAB00D27A97A3500CE36B2 /* ContentView.swift */,
+				FADAB00F27A97A3700CE36B2 /* Assets.xcassets */,
+				FADAB01427A97A3700CE36B2 /* Info.plist */,
+				FADAB01127A97A3700CE36B2 /* Preview Content */,
+			);
+			path = MockableChatApp;
+			sourceTree = "<group>";
+		};
+		FADAB01127A97A3700CE36B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB01227A97A3700CE36B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FADAB01C27A97A3700CE36B2 /* MockableChatAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8827AEA24B00BF83A5 /* TestViewModels */,
+				FA6A7B8727AEA23E00BF83A5 /* TestUsecases */,
+				FADAB01F27A97A3700CE36B2 /* Info.plist */,
+			);
+			path = MockableChatAppTests;
+			sourceTree = "<group>";
+		};
+		FADAB02727A97A3700CE36B2 /* MockableChatAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB02827A97A3700CE36B2 /* MockableChatAppUITests.swift */,
+				FADAB02A27A97A3700CE36B2 /* Info.plist */,
+			);
+			path = MockableChatAppUITests;
+			sourceTree = "<group>";
+		};
+		FADAB03627A97A6000CE36B2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8F27AEB96900BF83A5 /* MockImp */,
+				FA6A7B8C27AEB8F000BF83A5 /* StoreProtocols */,
+				FADAB03927A97AAB00CE36B2 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FADAB03927A97AAB00CE36B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB03727A97A7A00CE36B2 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FADAB03A27A97AB900CE36B2 /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB04727A97C2800CE36B2 /* MockMessagingService.swift */,
+				FAA1FD8127AD5CF7002D4E01 /* MockCurrentUserService.swift */,
+				FAA1FD8527AD6D1C002D4E01 /* MockLastMessageStoreService.swift */,
+			);
+			path = MockServices;
+			sourceTree = "<group>";
+		};
+		FADAB03D27A97B0E00CE36B2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB04927A97C3F00CE36B2 /* Usecases */,
+				FADAB04627A97BFC00CE36B2 /* ServicesProtocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FADAB03E27A97B1A00CE36B2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A7B8B27AEB76F00BF83A5 /* CustomViews */,
+				FADAB03F27A97B2E00CE36B2 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FADAB03F27A97B2E00CE36B2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB04527A97B9500CE36B2 /* Chat */,
+				FADAB04227A97B7000CE36B2 /* ChatContact */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FADAB04227A97B7000CE36B2 /* ChatContact */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB04027A97B6900CE36B2 /* ChatContactListView.swift */,
+				FADAB04A27A97C8A00CE36B2 /* ChatContactViewModel.swift */,
+				FA6A7B8327AE9A2D00BF83A5 /* ChatContactListItemView.swift */,
+			);
+			path = ChatContact;
+			sourceTree = "<group>";
+		};
+		FADAB04527A97B9500CE36B2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB04327A97B9100CE36B2 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		FADAB04627A97BFC00CE36B2 /* ServicesProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB03B27A97AEA00CE36B2 /* MessagingService.swift */,
+				FAA1FD7F27AD5C2D002D4E01 /* CurrentUserService.swift */,
+				FAA1FD8327AD6CBF002D4E01 /* LastMessageStoreService.swift */,
+			);
+			path = ServicesProtocols;
+			sourceTree = "<group>";
+		};
+		FADAB04927A97C3F00CE36B2 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				FADAB04C27A97D8200CE36B2 /* FetchChatContactListUsecase.swift */,
+				FA6A7B7F27AE4E9D00BF83A5 /* FetchMessagessUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADAB00727A97A3500CE36B2 /* MockableChatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADAB02D27A97A3700CE36B2 /* Build configuration list for PBXNativeTarget "MockableChatApp" */;
+			buildPhases = (
+				FADAB00427A97A3500CE36B2 /* Sources */,
+				FADAB00527A97A3500CE36B2 /* Frameworks */,
+				FADAB00627A97A3500CE36B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockableChatApp;
+			productName = MockableChatApp;
+			productReference = FADAB00827A97A3500CE36B2 /* MockableChatApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADAB01827A97A3700CE36B2 /* MockableChatAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADAB03027A97A3700CE36B2 /* Build configuration list for PBXNativeTarget "MockableChatAppTests" */;
+			buildPhases = (
+				FADAB01527A97A3700CE36B2 /* Sources */,
+				FADAB01627A97A3700CE36B2 /* Frameworks */,
+				FADAB01727A97A3700CE36B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADAB01B27A97A3700CE36B2 /* PBXTargetDependency */,
+			);
+			name = MockableChatAppTests;
+			productName = MockableChatAppTests;
+			productReference = FADAB01927A97A3700CE36B2 /* MockableChatAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FADAB02327A97A3700CE36B2 /* MockableChatAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADAB03327A97A3700CE36B2 /* Build configuration list for PBXNativeTarget "MockableChatAppUITests" */;
+			buildPhases = (
+				FADAB02027A97A3700CE36B2 /* Sources */,
+				FADAB02127A97A3700CE36B2 /* Frameworks */,
+				FADAB02227A97A3700CE36B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADAB02627A97A3700CE36B2 /* PBXTargetDependency */,
+			);
+			name = MockableChatAppUITests;
+			productName = MockableChatAppUITests;
+			productReference = FADAB02427A97A3700CE36B2 /* MockableChatAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADAB00027A97A3500CE36B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FADAB00727A97A3500CE36B2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FADAB01827A97A3700CE36B2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FADAB00727A97A3500CE36B2;
+					};
+					FADAB02327A97A3700CE36B2 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FADAB00727A97A3500CE36B2;
+					};
+				};
+			};
+			buildConfigurationList = FADAB00327A97A3500CE36B2 /* Build configuration list for PBXProject "MockableChatApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADAAFFF27A97A3500CE36B2;
+			productRefGroup = FADAB00927A97A3500CE36B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADAB00727A97A3500CE36B2 /* MockableChatApp */,
+				FADAB01827A97A3700CE36B2 /* MockableChatAppTests */,
+				FADAB02327A97A3700CE36B2 /* MockableChatAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADAB00627A97A3500CE36B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADAB01327A97A3700CE36B2 /* Preview Assets.xcassets in Resources */,
+				FADAB01027A97A3700CE36B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAB01727A97A3700CE36B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAB02227A97A3700CE36B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADAB00427A97A3500CE36B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A7B9627AEBB9E00BF83A5 /* MockContactStore.swift in Sources */,
+				FAA1FD8027AD5C2D002D4E01 /* CurrentUserService.swift in Sources */,
+				FA6A7B9227AEB99400BF83A5 /* MockMessageStore.swift in Sources */,
+				FADAB04B27A97C8A00CE36B2 /* ChatContactViewModel.swift in Sources */,
+				FADAB03C27A97AEA00CE36B2 /* MessagingService.swift in Sources */,
+				FADAB04127A97B6900CE36B2 /* ChatContactListView.swift in Sources */,
+				FA6A7B9427AEBB4100BF83A5 /* ContactStore.swift in Sources */,
+				FAA1FD8227AD5CF7002D4E01 /* MockCurrentUserService.swift in Sources */,
+				FADAB04827A97C2800CE36B2 /* MockMessagingService.swift in Sources */,
+				FADAB03827A97A7A00CE36B2 /* Models.swift in Sources */,
+				FADAB04D27A97D8200CE36B2 /* FetchChatContactListUsecase.swift in Sources */,
+				FADAB00E27A97A3500CE36B2 /* ContentView.swift in Sources */,
+				FAA1FD8627AD6D1C002D4E01 /* MockLastMessageStoreService.swift in Sources */,
+				FA6A7B8427AE9A2D00BF83A5 /* ChatContactListItemView.swift in Sources */,
+				FADAB04427A97B9100CE36B2 /* ChatView.swift in Sources */,
+				FA6A7B8227AE968400BF83A5 /* NamePlaceHolderView.swift in Sources */,
+				FADAB00C27A97A3500CE36B2 /* MockableChatAppApp.swift in Sources */,
+				FA6A7B8027AE4E9D00BF83A5 /* FetchMessagessUsecase.swift in Sources */,
+				FAA1FD8427AD6CBF002D4E01 /* LastMessageStoreService.swift in Sources */,
+				FA6A7B8E27AEB92700BF83A5 /* MessageStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAB01527A97A3700CE36B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A7B8627AE9C6600BF83A5 /* FetchChatContactListUsecaseTest.swift in Sources */,
+				FA6A7B8A27AEA27900BF83A5 /* ChatContactListViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAB02027A97A3700CE36B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADAB02927A97A3700CE36B2 /* MockableChatAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADAB01B27A97A3700CE36B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADAB00727A97A3500CE36B2 /* MockableChatApp */;
+			targetProxy = FADAB01A27A97A3700CE36B2 /* PBXContainerItemProxy */;
+		};
+		FADAB02627A97A3700CE36B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADAB00727A97A3500CE36B2 /* MockableChatApp */;
+			targetProxy = FADAB02527A97A3700CE36B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FADAB02B27A97A3700CE36B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADAB02C27A97A3700CE36B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADAB02E27A97A3700CE36B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MockableChatApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G8GZDW98G8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MockableChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynkto.MockableChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADAB02F27A97A3700CE36B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MockableChatApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G8GZDW98G8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MockableChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynkto.MockableChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FADAB03127A97A3700CE36B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8GZDW98G8;
+				INFOPLIST_FILE = MockableChatAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynkto.MockableChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MockableChatApp.app/MockableChatApp";
+			};
+			name = Debug;
+		};
+		FADAB03227A97A3700CE36B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8GZDW98G8;
+				INFOPLIST_FILE = MockableChatAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynkto.MockableChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MockableChatApp.app/MockableChatApp";
+			};
+			name = Release;
+		};
+		FADAB03427A97A3700CE36B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8GZDW98G8;
+				INFOPLIST_FILE = MockableChatAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynkto.MockableChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MockableChatApp;
+			};
+			name = Debug;
+		};
+		FADAB03527A97A3700CE36B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8GZDW98G8;
+				INFOPLIST_FILE = MockableChatAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynkto.MockableChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MockableChatApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADAB00327A97A3500CE36B2 /* Build configuration list for PBXProject "MockableChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADAB02B27A97A3700CE36B2 /* Debug */,
+				FADAB02C27A97A3700CE36B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADAB02D27A97A3700CE36B2 /* Build configuration list for PBXNativeTarget "MockableChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADAB02E27A97A3700CE36B2 /* Debug */,
+				FADAB02F27A97A3700CE36B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADAB03027A97A3700CE36B2 /* Build configuration list for PBXNativeTarget "MockableChatAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADAB03127A97A3700CE36B2 /* Debug */,
+				FADAB03227A97A3700CE36B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADAB03327A97A3700CE36B2 /* Build configuration list for PBXNativeTarget "MockableChatAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADAB03427A97A3700CE36B2 /* Debug */,
+				FADAB03527A97A3700CE36B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADAB00027A97A3500CE36B2 /* Project object */;
+}
